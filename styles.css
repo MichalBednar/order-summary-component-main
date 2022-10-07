@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(225deg, 100%, 94%) repeat-x url(images/pattern-background-desktop.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: hsl(225deg, 100%, 98%);
+  width: 80%;
+  min-width: 250px;
+  max-width: 400px;
+  font-family: "Red Hat Display";
+  font-size: 1.6rem;
+  border-radius: 1.8rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 30px hsl(224deg, 23%, 55%);
+  padding-bottom: 3.5rem;
+}
+
+#hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, .description {
+  text-align: center;
+}
+
+h1 {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+
+.description {
+  width: 80%;
+  color: hsl(224deg, 23%, 55%);
+  margin-top: 1rem;
+}
+
+article {
+  width: 80%;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(225deg, 100%, 94%, 0.4);
+  border-radius: 1rem;
+}
+article .left {
+  margin-left: 2rem;
+  display: flex;
+}
+article .left .plan {
+  margin-left: 1.5rem;
+}
+article .left .plan p:first-of-type {
+  font-weight: 700;
+  color: hsl(223deg, 47%, 23%);
+}
+article .left .plan p:last-of-type {
+  margin-top: 0.5rem;
+  color: hsl(224deg, 23%, 55%);
+}
+article button {
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  color: hsl(245deg, 75%, 52%);
+  margin-right: 2rem;
+  transition: 0.2s;
+}
+article button:hover {
+  cursor: pointer;
+  color: hsla(245deg, 75%, 52%, 0.7);
+}
+
+.pay {
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  border: none;
+  width: 80%;
+  padding: 1.3rem 0;
+  color: hsl(225deg, 100%, 98%);
+  background-color: hsl(245deg, 75%, 52%);
+  border-radius: 1rem;
+  margin-top: 3rem;
+  box-shadow: 0px 6px 20px hsl(224deg, 40%, 67%);
+  transition: 0.3s;
+}
+
+.pay:hover {
+  cursor: pointer;
+  background-color: hsla(245deg, 75%, 52%, 0.7);
+}
+
+.cancel {
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  border: none;
+  width: 80%;
+  padding: 1.3rem 0;
+  color: hsl(224deg, 23%, 55%);
+  background-color: transparent;
+  margin-top: 3rem;
+  transition: 0.2s;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: hsl(223deg, 47%, 23%);
+}
+
+@media (max-width: 550px) {
+  body {
+    background: hsl(225deg, 100%, 94%) repeat-x url(images/pattern-background-mobile.svg);
+  }
+}/*# sourceMappingURL=styles.css.map */
